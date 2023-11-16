@@ -9,6 +9,10 @@
 <script>
 export default {
     name:'my-button',
+    props: {
+        type: String,
+        disabled: Boolean,
+    }
 }
 </script>
 
@@ -28,18 +32,17 @@ export default {
 
         background-color: $secondary-dark-color;
 
-        &--size {
-            &-big {
-                padding: 20px 35px;
-            }
-
-            &-medium {
-                padding: 15px 20px;
-            }
-
-            &-small {
-                padding: 5px;
-            }
+        &-big {
+            padding: 20px 35px;
         }
+
+        &-medium {
+            padding: 15px 20px;
+        }
+
+        &-small {
+            padding: 5px 15px;
+        }
+
     }
 </style>

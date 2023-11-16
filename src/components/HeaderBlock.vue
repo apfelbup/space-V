@@ -27,7 +27,7 @@
                     <router-link class="link" to="/about">About</router-link>
                 </li>
                 <li>
-                    <my-button>
+                    <my-button type="btn-small">
                         <template #text>
                             Search
                         </template>
